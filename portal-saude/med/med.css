@@ -1,0 +1,294 @@
+body{
+    height: 1000px;
+    margin: 0;
+    background-color: #dee5e5;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+/* layout container to align all sections to the same left margin */
+.container{
+    max-width: 1100px;
+    margin: 0 auto; /* center page content */
+    padding: 0 20px; /* consistent left/right padding */
+    box-sizing: border-box;
+}
+nav{
+    background-color: #08415c;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-nav-textos {
+    display: flex;
+    gap: 5px;
+}
+.container-nav2 {
+    gap: 10px;
+}
+nav p{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+}
+.menubtn{
+    height: 100%;
+    background: none;
+    border: none;
+    color: white;
+    position: relative;
+    font-size: 17px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    
+
+}
+.btnav{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;   
+    transition: 0.2s; 
+}
+.btnav:hover {
+    color: #00ffdd;
+    scale: calc(1.1);
+    
+}
+.principal{
+    height: 800px;
+    margin: 0;
+    padding: 0%;
+    text-align: center;
+    background-image: url("WhatsApp Image 2025-12-18 at 12.11.28.jpeg");
+    background-image: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.foto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    padding: 0%;
+    margin: 0%;
+}
+.principal .container h1{
+    margin: 0;
+    padding: 30px 0 10px 0;
+    font-size: 48px;
+    color: white;
+    line-height: 1.05;
+}
+.lead{
+    margin: 0 0 30px 0;
+    color: rgba(255,255,255,0.95);
+    font-size: 18px;
+}
+.topico{
+    font-size: 28px;
+    margin: 50px 0 10px 0;
+}
+.info{
+    margin: 0 0 30px 0;
+    font-size: 18px;
+}
+.bula{
+    text-align: center;
+    margin-top: 40px;
+}
+.topbula{
+    font-size: 36px;
+    margin: 30px 0 10px 0;
+}
+.infobula{
+    font-size: 18px;
+    margin: 0 0 30px 0;
+}
+.pqinfo{
+    font-size: 15px;
+    margin: 6px 0 12px 0;
+}
+.dcard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.pq{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 320px));
+    gap: 28px 32px;
+    justify-content: center; /* center the grid inside container */
+    width: 100%;
+    align-items: start;
+    margin: 20px 0 40px 0;
+}
+.pq li{
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 320px;
+}
+
+/* center the grid inside the container */
+.dcard .container{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1000px){
+    .pq{
+        grid-template-columns: repeat(2, minmax(0, 320px));
+    }
+}
+
+@media (max-width: 600px){
+    .pq{
+        grid-template-columns: 1fr;
+    }
+    .pq li{
+        max-width: 100%;
+    }
+}
+.it:hover .ranimg{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.ranimg{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    transition: 0.2s;
+}
+h5{
+    font-size: 20px;
+}
+.remedios{
+    text-align: center;
+
+}
+.listmed{
+   
+    gap: 20px;
+    position: relative;
+    width: auto;
+    height: auto;
+
+}
+.ulmed{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    overflow-x: scroll;
+    margin-top: 30px;
+    
+}
+.med{
+    height: 30px;
+    width: 150px;
+    background-color: #08415c;
+    color: white;
+    margin-top: 5px;
+    
+}
+.topcards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.listcards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.licard{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+.lito{
+    height: 30px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.texttop{
+    position: relative;
+    bottom: 30px;
+}
+.liin{
+    height: 0px;
+    border: 1px solid gray;
+    opacity: 0;
+}
+.licard:hover .liin{
+    height: 300px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.visu{
+    height: 100px;
+}
+.visu p{
+    margin-top: 100px;
+}
+.medimg{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+.consequencias li{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.denuncia{
+    height: 250px;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+footer{
+    background-color: #08415c;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.direitos{
+    font-size: 20px;
+}
+.redes{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+.redes a:hover{
+    color: #00ffdd;
+    transition: 0.4s;
+}
+.social{
+    cursor: pointer;
+}
