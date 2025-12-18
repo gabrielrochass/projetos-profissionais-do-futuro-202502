@@ -1,14 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <a href="https://www.instagram.com/darlizks/?hl=pt">
-      <button>Ir para o instagram de darlysson</button>
-    </a>
-  </body>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Início | Caminhos Digitais 2025.2</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__left">
+      <div class="navbar__title">
+        <h1>Caminhos Digitais 2025.2</h1>
+      </div>
+    </div>
+    <ul class="navbar__links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#portais">Portais</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <!-- Seção Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero__content">
+        <h2 class="hero__title">Bem-vindo ao Caminhos Digitais 2025.2</h2>
+        <p class="hero__description">
+          Explore dois projetos inovadores desenvolvidos por nossos alunos do curso de front-end. Descubra plataformas criativas que combinam tecnologia, design e conhecimento prático.
+        </p>
+        <p class="hero__description">
+          Cada portal foi cuidadosamente planejado com uma temática única para proporcionar experiências digitais memoráveis e educativas.
+        </p>
+      </div>
+      <div class="hero__image">
+        <img src="./assets/turma.jpeg" alt="Ilustração Caminhos Digitais" class="hero__image-content" />
+      </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="about" id="sobre">
+      <div class="about__image">
+        <img src="./assets/turma.jpeg" alt="Sobre o Projeto" class="about__image-content" />
+      </div>
+      <div class="about__content">
+        <h2 class="about__title">Sobre Este Projeto</h2>
+        <p class="about__description">
+          O Caminhos Digitais 2025.2 é uma iniciativa educacional que desafia nossos alunos a criarem plataformas digitais funcionais e visualmente atrativas. Este semestre, os projetos foram organizados em dois eixos temáticos distintos.
+        </p>
+        <p class="about__description">
+          Aplicamos conceitos modernos de HTML5, CSS3 e JavaScript para criar interfaces intuitivas, responsivas e acessíveis. Cada projeto representa o compromisso com qualidade, criatividade e excelência técnica.
+        </p>
+        <p class="about__description">
+          Convidamos você a explorar os portais, avaliar o trabalho realizado e se inspirar com o potencial dos nossos desenvolvedores em formação.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção Portais -->
+    <section class="portals" id="portais">
+      <h2 class="portals__title">Conheça Nossos Portais</h2>
+      <p class="portals__subtitle">Dois universos digitais, duas experiências únicas</p>
+
+      <div class="portals__grid">
+        <!-- Portal 1: Saúde -->
+        <div class="portal-card">
+          <div class="portal-card__header">
+            <div class="portal-card__icon">
+              <span class="icon-health">❤️</span>
+            </div>
+            <h3 class="portal-card__title">Portal da Saúde</h3>
+          </div>
+          
+          <div class="portal-card__content">
+            <p class="portal-card__description">
+              Seu espaço dedicado a saúde, bem-estar e qualidade de vida. Explore conteúdos importantes sobre automedicação, estética, exercícios físicos, nutrição e muito mais.
+            </p>
+            
+            <div class="portal-card__topics">
+              <h4 class="portal-card__topics-title">Temas abordados:</h4>
+              <ul class="portal-card__topics-list">
+                <li>Educação sobre Automedicação</li>
+                <li>Cursos de Estética</li>
+                <li>Programas de Exercícios Físicos</li>
+                <li>Dicas de Alimentação Saudável</li>
+                <li>Bem-estar Mental</li>
+              </ul>
+            </div>
+          </div>
+          
+          <a href="./portal-saude/index.html" class="portal-card__link">
+            Acessar Portal
+            <span class="portal-card__arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Portal 2: Nordeste -->
+        <div class="portal-card">
+          <div class="portal-card__header">
+            <div class="portal-card__icon">
+              <span class="icon-northeast">🎭</span>
+            </div>
+            <h3 class="portal-card__title">Visse Por Aí</h3>
+          </div>
+          
+          <div class="portal-card__content">
+            <p class="portal-card__description">
+              Mergulhe na riqueza da cultura nordestina. Descubra tradições, sabores autênticos, destinos turísticos fascinantes e personagens que marcaram história.
+            </p>
+            
+            <div class="portal-card__topics">
+              <h4 class="portal-card__topics-title">Temas abordados:</h4>
+              <ul class="portal-card__topics-list">
+                <li>Cultura Nordestina</li>
+                <li>Comidas Típicas Regionais</li>
+                <li>Lugares Turísticos</li>
+                <li>Personagens Famosos</li>
+                <li>Tradições e Folclore</li>
+              </ul>
+            </div>
+          </div>
+          
+          <a href="./visse-por-ai/index.html" class="portal-card__link">
+            Acessar Portal
+            <span class="portal-card__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Destaques -->
+    <section class="highlights">
+      <h2 class="highlights__title">Destaques dos Portais</h2>
+      
+      <div class="highlights__grid">
+        <div class="highlight-item">
+          <div class="highlight-item__icon">📚</div>
+          <h3 class="highlight-item__title">Conteúdo Educativo</h3>
+          <p class="highlight-item__text">Informações confiáveis e bem estruturadas para diferentes públicos</p>
+        </div>
+
+        <div class="highlight-item">
+          <div class="highlight-item__icon">🎨</div>
+          <h3 class="highlight-item__title">Design Moderno</h3>
+          <p class="highlight-item__text">Interfaces visuais atrativas e alinhadas com tendências atuais</p>
+        </div>
+
+        <div class="highlight-item">
+          <div class="highlight-item__icon">📱</div>
+          <h3 class="highlight-item__title">Responsivo</h3>
+          <p class="highlight-item__text">Experiência perfeita em todos os dispositivos e tamanhos de tela</p>
+        </div>
+
+        <div class="highlight-item">
+          <div class="highlight-item__icon">⚡</div>
+          <h3 class="highlight-item__title">Performance</h3>
+          <p class="highlight-item__text">Sites rápidos e otimizados para melhor experiência do usuário</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Caminhos Digitais. Todos os direitos reservados. | Turma 2025.2</p>
+  </footer>
+</body>
 </html>
